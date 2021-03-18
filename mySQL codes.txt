@@ -1,0 +1,35 @@
+create databse shivanshjain_xiib;
+
+use shivanshjain_xiib;
+
+
+create table purchases(billno varchar(5),date varchar(10),brand varchar(10),colour varchar(10),size varchar(6),dealer varchar(10),purchasetype varchar(10),quantity varchar(10),rate varchar(10),discount varchar(6),price varchar(10));
+
+create table sales(billno varchar(5),date varchar(10),brand varchar(10),colour varchar(10),size varchar(6),buyer varchar(10),purchasetype varchar(10),quantity varchar(10),rate varchar(10),discount varchar(6),price varchar(10));
+
+create table preturn(prno varchar(5),billno varchar(5),date varchar(10),brand varchar(10),colour varchar(10),size varchar(6),dealer varchar(10),purchasetype varchar(10),quantity varchar(10),rate varchar(10),discount varchar(6),price varchar(10));
+
+create table sreturn(srno varchar(6),billno varchar(5),date varchar(10),brand varchar(10),colour varchar(10),size varchar(6),buyer varchar(10),purchasetype varchar(10),quantity varchar(10),rate varchar(10),discount varchar(6),price varchar(10));
+
+
+create table salary(empid varchar(3),empname varchar(20),salary varchar(10),department varchar(10),date varchar(10));
+
+
+create table expenses(date varchar(10),expense varchar(15),amount varchar(10));
+
+
+create table miscincome(date varchar(10),income varchar(10),amount varchar(10));
+
+create table stock(date varchar(10),brand varchar(10),colour varchar(10),size varchar(6),openingstock varchar(10),purchases varchar(10),preturn varchar(10),sales varchar(10),sreturn varchar(10),closingstock varchar(10));
+
+
+create table profitloss(date varchar(10),purchases varchar(10),preturn varchar(10),sales varchar(10),sreturn varchar(10),expenses varchar(10),salary varchar(10),miscincome varchar(10),net varchar(10));
+
+
+
+
+create table password(username varchar(40),password varchar(20));
+
+
+insert into password values("shivanshjain","shivanshjain");
+
